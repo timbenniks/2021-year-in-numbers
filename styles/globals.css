@@ -1,16 +1,69 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer components {
+  body {
+    @apply bg-blue-dark text-white;
+  }
 
-* {
-  box-sizing: border-box;
+  img,
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .title {
+    @apply uppercase font-black inline-block px-2 text-xl md:text-3xl leading-none;
+  }
+
+  .flowing-title {
+    box-shadow: -8px 0 0 theme("colors.blue.dark");
+    background: theme("colors.blue.dark");
+
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    white-space: initial;
+    position: relative;
+    left: 8px;
+    display: inline;
+    padding-left: 0;
+  }
+
+  .flowing-title-light {
+    box-shadow: -8px 0 0 theme("colors.blue.light");
+    background: theme("colors.blue.light");
+  }
+
+  .flowing-title-red {
+    box-shadow: -8px 0 0 theme("colors.red");
+    background: theme("colors.red");
+  }
+
+  .flowing-title-yellow {
+    box-shadow: -8px 0 0 theme("colors.yellow");
+    color: theme("colors.black");
+    background: theme("colors.yellow");
+  }
+
+  .flowing-title-fancy {
+    background: -webkit-linear-gradient(0deg, #fbd088, #256ad1, #d1258c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* background: theme('colors.black'); */
+    box-shadow: -8px 0 0 theme("colors.black");
+    position: relative;
+    z-index: 1;
+  }
+
+  .flowing-title-fancy::before {
+    content: "";
+    background: theme("colors.black");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
 }
