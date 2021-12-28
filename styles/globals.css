@@ -4,6 +4,8 @@
 
 @layer components {
   body {
+    background-image: url(https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto,f_auto/bg_j7zo5y.jpg);
+    background-attachment: fixed;
     @apply bg-blue-dark text-white;
   }
 
