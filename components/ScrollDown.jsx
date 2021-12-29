@@ -1,7 +1,7 @@
 const Counter = () => {
   const scrollTo = () => {
     if (typeof window === "object") {
-      const to = document.querySelector(".youtube").offsetTop;
+      const to = document.querySelector(".youtube").offsetTop - 200;
       window.scrollTo({ top: to, behavior: "smooth" });
     }
   };
