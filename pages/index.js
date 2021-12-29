@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Hero from "../components/Hero";
-import YouTube from "../components/YouTube";
+import YouTubeStats from "../components/YouTubeStats";
+import MostWatched from "../components/MostWatched";
 
 export default function Home() {
   return (
@@ -13,7 +14,8 @@ export default function Home() {
 
       <main className="max-w-5xl mx-auto">
         <Hero />
-        <YouTube />
+        <YouTubeStats />
+        <MostWatched />
       </main>
     </>
   );

@@ -1,6 +1,6 @@
 {
   "name": "2021.timbenniks.dev",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",

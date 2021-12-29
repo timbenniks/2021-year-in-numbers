@@ -68,4 +68,18 @@
     height: 100%;
     z-index: -1;
   }
+
+  .with-fancy-bg {
+    @apply relative;
+  }
+
+  .with-fancy-bg:before {
+    content: "";
+    @apply absolute w-full h-full -bottom-2 -right-6 bg-blue-dark z-0;
+  }
+
+  .with-fancy-bg.fancy-blue-light:before {
+    content: "";
+    @apply bg-blue-light;
+  }
 }

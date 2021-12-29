@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useCountUp } from "react-countup";
 
@@ -19,10 +19,12 @@ const Counter = (props) => {
     useEasing: true,
   });
 
-  if (inView && !started) {
-    setStarted(true);
-    start();
-  }
+  useEffect(() => {
+    if (inView && !started) {
+      setStarted(true);
+      start();
+    }
+  }, [inView, start, started, setStarted]);
 
   return (
     <div className="counter-wrapper inview-indicator" ref={ref}>
