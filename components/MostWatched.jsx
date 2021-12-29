@@ -3,20 +3,32 @@ import Counter from "./Counter";
 const MostWatched = () => {
   return (
     <section className="most-watched my-12" style={{ aspectRatio: "16/9" }}>
-      <h2 className="title flowing-title flowing-title-red text-6xl">
+      <h2 className="title flowing-title flowing-title-red text-6xl float-right mb-8">
         Most watched video
       </h2>
-      <div className="flex mt-12">
-        <div className="text-right">
-          <Counter end="12934" duration="2" suffix=" views" size="text-4xl" />
+      <div className="flex mt-12 clear-right">
+        <div className="text-right mt-2">
+          <h3 className="title flowing-title flowing-title-yellow text-3xl">
+            TIM TRIES: FIGMA, ZEPLIN AND STORYBOOK. MIND IS BLOWN...
+          </h3>
+
           <Counter
-            end="138.1"
+            from="10000"
+            end="12934"
+            duration="2"
+            suffix=" views"
+            size="text-4xl"
+          />
+          <Counter
+            from="100"
+            end="138"
             duration="2"
             suffix="k impressions"
             size="text-5xl"
           />
           <Counter
-            end="96.7"
+            from="10"
+            end="97"
             duration="2"
             suffix="% unsubscribed viewers"
             size="text-3xl"
@@ -26,7 +38,7 @@ const MostWatched = () => {
           className="image-wrapper with-fancy-bg fancy-blue-light"
           style={{
             aspectRatio: "16/9",
-            width: "550px",
+            width: "700px",
           }}
         >
           <div

@@ -82,4 +82,22 @@
     content: "";
     @apply bg-blue-light;
   }
+
+  .link {
+    @apply font-black text-white py-1;
+  }
+
+  .link:hover,
+  .link .link-active {
+    @apply underline;
+  }
+
+  .link.link-selected {
+    @apply bg-red px-2 py-2 underline;
+  }
+
+  .link.nuxt-link-exact-active,
+  .link.link-cta {
+    @apply bg-blue-light px-2 py-2 underline;
+  }
 }

@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useCountUp } from "react-countup";
 
 const Counter = (props) => {
-  const { end, duration, suffix, size } = props;
+  const { from, end, duration, suffix, size } = props;
   const [started, setStarted] = useState(false);
   const countUpRef = useRef(null);
 
@@ -13,6 +13,7 @@ const Counter = (props) => {
 
   const { start } = useCountUp({
     ref: countUpRef,
+    start: from,
     end,
     duration,
     suffix,
