@@ -50,7 +50,7 @@ const Linkedin = () => {
               end="83"
               duration="2"
               suffix=" reactions"
-              size="text-5xl"
+              size="text-3xl"
             />
             <Counter
               from="10"
@@ -67,7 +67,7 @@ const Linkedin = () => {
             frameBorder="0"
             allowFullScreen=""
             title="Embedded post"
-            className="w-full md:ml-8"
+            className="w-full md:max-w-xl md:ml-8"
           ></iframe>
         </div>
       </section>

@@ -34,7 +34,7 @@ const BestTweet = () => {
           />
         </div>
         <div
-          className="image-wrapper with-fancy-bg fancy-blue-light w-full"
+          className="image-wrapper with-fancy-bg fancy-blue-light w-full md:max-w-sm"
           style={{
             aspectRatio: "500/481",
           }}

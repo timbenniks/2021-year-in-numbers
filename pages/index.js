@@ -17,6 +17,52 @@ export default function Home() {
         <title>Tim Benniks 2021 in numbers</title>
         <meta name="description" content="2021: My Year In Numbers" />
         <link rel="icon" href="/favicon.ico" />
+
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta property="og:type" content="website" />
+        <meta
+          name="og:title"
+          property="og:title"
+          content="Tim Benniks 2021 in numbers"
+        />
+        <meta
+          name="og:description"
+          property="og:description"
+          content="2021: My Year In Numbers"
+        />
+        <meta property="og:site_name" content="Tim Benniks" />
+        <meta property="og:url" content="/" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto/og_v4nrbq.png"
+        />
+
+        <meta name="msapplication-TileColor" content="#0e274f" />
+        <meta name="theme-color" content="#3671cd" />
+        <meta
+          data-hid="mobile-web-app-capable"
+          name="mobile-web-app-capable"
+          content="yes"
+        />
+        <meta
+          data-hid="apple-mobile-web-app-title"
+          name="apple-mobile-web-app-title"
+          content="timbenniks"
+        />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Tim Benniks 2021 in numbers" />
+        <meta name="twitter:description" content="2021: My Year In Numbers" />
+        <meta name="twitter:site" content="@timbenniks" />
+        <meta name="twitter:creator" content="@timbenniks" />
+
+        <meta
+          itemProp="name"
+          content="Tim Benniks: developer relations, video creator..."
+        />
+
+        <link rel="preconnect" href="https://res.cloudinary.com" />
       </Head>
 
       <main className="max-w-5xl mx-auto">
