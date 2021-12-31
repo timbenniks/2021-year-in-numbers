@@ -2,11 +2,14 @@ import Counter from "./Counter";
 
 const BestTweet = () => {
   return (
-    <section className="most-watched mt-12 mb-24">
-      <h2 className="title flowing-title flowing-title-red text-6xl float-right mb-8">
+    <section
+      className="most-watched mt-12 mb-24 mx-auto"
+      style={{ width: "95%" }}
+    >
+      <h2 className="title flowing-title flowing-title-red text-3xl md:text-6xl float-right mb-8">
         Most engagements
       </h2>
-      <div className="flex mt-12 clear-right">
+      <div className="flex flex-col md:flex-row  mt-12 clear-right">
         <div className="text-right mt-2">
           <Counter
             from="100"
@@ -20,7 +23,7 @@ const BestTweet = () => {
             end="13176"
             duration="2"
             suffix=" impressions"
-            size="text-5xl"
+            size="text-3xl md:text-5xl"
           />
           <Counter
             from="10"
@@ -31,14 +34,13 @@ const BestTweet = () => {
           />
         </div>
         <div
-          className="image-wrapper with-fancy-bg fancy-blue-light"
+          className="image-wrapper with-fancy-bg fancy-blue-light w-full"
           style={{
             aspectRatio: "500/481",
-            width: "500px",
           }}
         >
           <div
-            className="bg-no-repeat bg-contain ml-8 absolute z-10 w-full h-full"
+            className="bg-no-repeat bg-contain md:ml-8  absolute z-10 w-full h-full"
             style={{
               backgroundImage:
                 "url(https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto,f_auto,w_1000/tweet_kcv8ud.png)",

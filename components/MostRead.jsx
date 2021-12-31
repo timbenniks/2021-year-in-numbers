@@ -2,13 +2,13 @@ import Counter from "./Counter";
 
 const MostRead = () => {
   return (
-    <section className="most-read mt-12 mb-48">
-      <h2 className="title flowing-title flowing-title-red text-6xl float-right mb-8">
+    <section className="most-read mt-12 mb-48 mx-auto" style={{ width: "95%" }}>
+      <h2 className="title flowing-title flowing-title-red text-3xl md:text-6xl float-right mb-8">
         Most read post
       </h2>
-      <div className="flex mt-12 clear-right">
+      <div className="flex flex-col md:flex-row mt-12 clear-right">
         <div className="text-right mt-2">
-          <h3 className="title flowing-title flowing-title-yellow text-3xl">
+          <h3 className="title flowing-title flowing-title-yellow text-2xl md:text-3xl">
             HOW TO GET YOUR WEBCAM TO LOOK DECENT IN A FEW SIMPLE STEPS
           </h3>
 
@@ -24,7 +24,7 @@ const MostRead = () => {
             end="7"
             duration="2"
             suffix=" mins on page"
-            size="text-5xl"
+            size="text-3xl md:text-5xl"
           />
           <Counter
             from="10"
@@ -35,14 +35,13 @@ const MostRead = () => {
           />
         </div>
         <div
-          className="image-wrapper with-fancy-bg fancy-blue-light"
+          className="image-wrapper with-fancy-bg fancy-blue-light w-full"
           style={{
             aspectRatio: "16/9",
-            width: "700px",
           }}
         >
           <div
-            className="bg-no-repeat bg-contain ml-8 absolute z-10 w-full h-full"
+            className="bg-no-repeat bg-contain md:ml-8 absolute z-10 w-full h-full"
             style={{
               backgroundImage:
                 "url(https://res.cloudinary.com/dwfcofnrd/image/fetch/f_auto,q_auto,w_400/https://images.ctfassets.net/zutbjtt6qhdz/how-to-get-your-webcam-to-look-decent-in-a-few-simple-steps/50a4e6778ea51f170e33012bfa53db92/how-to-get-your-webcam-to-look-decent-in-a-few-simple-steps-3c83ea67-36df-446b-b3fe-57bc110cef13_vcf1xfoegwmhd.jpg)",

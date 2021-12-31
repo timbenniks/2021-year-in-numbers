@@ -4,8 +4,11 @@ import Counter from "./Counter";
 const Linkedin = () => {
   return (
     <>
-      <section className="plausible relative mt-48">
-        <div className="relative top-3 -left-4 z-10">
+      <section
+        className="linkedin relative my-12 mx-auto"
+        style={{ width: "95%" }}
+      >
+        <div className="relative -top-2 md:top-2 left-4 md:-left-4 z-10">
           <Image
             alt="LinkedIn Logo"
             src="/Linkedin.png"
@@ -19,21 +22,21 @@ const Linkedin = () => {
           end="1200"
           duration="2"
           suffix=" new followers"
-          size="text-6xl"
+          size="text-2xl md:text-6xl"
         />
         <Counter
           from="1000"
           end="4000"
           duration="2"
           suffix=" avg impressions"
-          size="text-5xl"
+          size="text-3xl md:text-5xl"
         />
       </section>
-      <section className="most-read mt-12 mb-48">
-        <h2 className="title flowing-title flowing-title-red text-6xl float-right mb-8">
-          Post with most interactions
+      <section className="most-read my-12 mx-auto" style={{ width: "95%" }}>
+        <h2 className="title flowing-title flowing-title-red text-3xl md:text-6xl float-right mb-8">
+          Most interactions
         </h2>
-        <div className="flex mt-12 clear-right">
+        <div className="flex flex-col md:flex-row mt-12 clear-right">
           <div className="text-right mt-2">
             <Counter
               from="1000"
@@ -64,7 +67,7 @@ const Linkedin = () => {
             frameBorder="0"
             allowFullScreen=""
             title="Embedded post"
-            className="ml-8"
+            className="w-full md:ml-8"
           ></iframe>
         </div>
       </section>

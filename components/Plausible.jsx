@@ -3,8 +3,11 @@ import Counter from "./Counter";
 
 const Plausible = () => {
   return (
-    <section className="plausible relative mt-12 mb-24">
-      <div className="relative top-5 -left-4 z-10">
+    <section
+      className="plausible relative my-12 mx-auto"
+      style={{ width: "95%" }}
+    >
+      <div className="relative -top-2 md:top-2 left-4 md:-left-4 z-10">
         <Image
           alt="plausible Logo"
           src="/plausible.png"
@@ -17,7 +20,7 @@ const Plausible = () => {
         end="52302"
         duration="2"
         suffix=" unique visitors"
-        size="text-7xl"
+        size="text-2xl md:text-7xl"
       />
       <Counter
         from="10"
@@ -31,7 +34,7 @@ const Plausible = () => {
         end="69"
         duration="2"
         suffix="% chrome browser"
-        size="text-5xl"
+        size="text-2xl md:text-5xl"
       />
       <Counter
         from="10"
