@@ -3,8 +3,8 @@ import Counter from "./Counter";
 
 const YouTube = () => {
   return (
-    <section className="youtube relative my-12" style={{ aspectRatio: "16/9" }}>
-      <div className="my-12">
+    <section className="youtube relative my-12">
+      <div className="relative top-2 -left-4 z-10">
         <Image alt="YouTube Logo" src="/yt.png" width="301" height="68" />
       </div>
       <Counter

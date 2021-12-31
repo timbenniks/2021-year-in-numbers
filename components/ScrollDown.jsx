@@ -11,7 +11,7 @@ const Counter = () => {
       width="50"
       height="50"
       viewBox="0 0 50 50"
-      className="absolute left-2/4 bottom-0 w-16 h-16 -translate-x-1/2 cursor-pointer"
+      className="absolute left-2/4 -bottom-36 w-16 h-16 -translate-x-1/2 cursor-pointer"
       onClick={scrollTo}
     >
       <path
