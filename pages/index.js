@@ -8,6 +8,7 @@ import Plausible from "../components/Plausible";
 import Twitter from "../components/Twitter";
 import BestTweet from "../components/BestTweet";
 import Linkedin from "../components/Linkedin";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         <BestTweet />
         <Linkedin />
       </main>
+      <Footer />
     </>
   );
 }

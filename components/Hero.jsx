@@ -4,12 +4,9 @@ import ScrollDown from "./ScrollDown";
 
 const Hero = () => {
   return (
-    <section className="hero relative mb-96" style={{ aspectRatio: "16/9" }}>
-      <div
-        className="absolute top-36 right-44"
-        style={{ width: "800px", height: "420px" }}
-      >
-        <div className="absolute -top-4 right-24">
+    <section className="hero">
+      <div className="hero-wrap">
+        <div className="hero-image">
           <Image
             alt="Tim Benniks Logo"
             src="/icon.png"
@@ -18,21 +15,15 @@ const Hero = () => {
             height="400"
           />
         </div>
-        <section className="absolute bottom-0 left-0">
-          <div className="title-wrapper mb-6">
-            <h1
-              className="title flowing-title flowing-title-fancy"
-              style={{ fontSize: "10rem" }}
-            >
+        <section className="hero-titles">
+          <div className="title-wrapper md:mb-6">
+            <h1 className="title flowing-title flowing-title-fancy year">
               <CountUp start={1000} end={2021} duration={1} useEasing={true}>
                 2021
               </CountUp>
             </h1>
           </div>
-          <h2
-            className="title flowing-title flowing-title-fancy"
-            style={{ fontSize: "4rem" }}
-          >
+          <h2 className="title flowing-title flowing-title-fancy tagline">
             My year in numbers
           </h2>
         </section>

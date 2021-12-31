@@ -101,3 +101,63 @@
     @apply bg-blue-light px-2 py-2 underline;
   }
 }
+
+.hero {
+  @apply relative;
+  aspect-ratio: 1/1;
+}
+
+.hero .hero-wrap {
+  @apply absolute top-8 left-2/4 -translate-x-2/4;
+
+  width: 375px;
+  height: 420px;
+}
+
+.hero .hero-image {
+  @apply absolute top-0 right-4;
+  width: 250px;
+}
+
+.hero .hero-titles {
+  @apply absolute top-44 left-0 px-4;
+}
+
+.hero .year {
+  font-size: 4rem;
+}
+
+.hero .tagline {
+  font-size: 1.8rem;
+}
+
+@media (min-width: 650px) {
+  .hero {
+    aspect-ratio: 16/9;
+    @apply relative mb-96;
+  }
+
+  .hero .hero-wrap {
+    @apply absolute top-36 right-44;
+
+    width: 800px;
+    height: 420px;
+  }
+
+  .hero .hero-image {
+    @apply absolute -top-4 right-24;
+    width: 400px;
+  }
+
+  .hero .hero-titles {
+    @apply absolute top-64 left-0 p-0 mt-2;
+  }
+
+  .hero .year {
+    font-size: 10rem;
+  }
+
+  .hero .tagline {
+    font-size: 4rem;
+  }
+}
