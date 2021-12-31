@@ -41,6 +41,10 @@ export default function Home() {
 
         <meta name="viewport" content="width=device-width,initial-scale=1" />
 
+        <meta itemprop="name" content="Tim Benniks 2021 in numbers"/>
+        <meta itemprop="description" content="2021 was a crazy year in which I switched jobs and changed up my life. This website shows my year in numbers."/>
+        <meta itemprop="image" content="http://res.cloudinary.com/dwfcofnrd/image/upload/q_auto/og_v4nrbq.png"/>
+
         <meta property="og:type" content="website" />
         <meta
           name="og:title"
