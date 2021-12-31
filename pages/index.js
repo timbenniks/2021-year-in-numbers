@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Head>
         <title>Tim Benniks 2021 in numbers</title>
-        <meta name="description" content="2021: My Year In Numbers" />
+        <meta name="description" content="2021 was a crazy year in which I switched jobs and changed up my life. This website " /shows my year in numbers.>
 
         <link
           rel="apple-touch-icon"
@@ -50,10 +50,10 @@ export default function Home() {
         <meta
           name="og:description"
           property="og:description"
-          content="2021: My Year In Numbers"
+          content="2021 was a crazy year in which I switched jobs and changed up my life. This website shows my year in numbers."
         />
         <meta property="og:site_name" content="Tim Benniks" />
-        <meta property="og:url" content="/" />
+        <meta property="og:url" content="https://2021.timbenniks.dev" />
         <meta
           property="og:image"
           content="https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto/og_v4nrbq.png"
@@ -74,7 +74,7 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Tim Benniks 2021 in numbers" />
-        <meta name="twitter:description" content="2021: My Year In Numbers" />
+        <meta name="twitter:description" content="2021 was a crazy year in which I switched jobs and changed up my life. This website " /shows my year in numbers.>
         <meta name="twitter:site" content="@timbenniks" />
         <meta name="twitter:creator" content="@timbenniks" />
 
