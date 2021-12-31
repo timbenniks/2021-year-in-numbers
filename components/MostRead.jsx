@@ -2,7 +2,10 @@ import Counter from "./Counter";
 
 const MostRead = () => {
   return (
-    <section className="most-read mt-12 mb-48 mx-auto" style={{ width: "95%" }}>
+    <section
+      className="most-read mt-12 mb-48 mx-auto "
+      style={{ width: "95%" }}
+    >
       <h2 className="title flowing-title flowing-title-red text-3xl md:text-6xl float-right mb-8">
         Most read post
       </h2>

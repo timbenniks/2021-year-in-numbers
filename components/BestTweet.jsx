@@ -3,7 +3,7 @@ import Counter from "./Counter";
 const BestTweet = () => {
   return (
     <section
-      className="most-watched mt-12 mb-24 mx-auto"
+      className="most-watched mt-12 mb-24 mx-auto "
       style={{ width: "95%" }}
     >
       <h2 className="title flowing-title flowing-title-red text-3xl md:text-6xl float-right mb-8">
@@ -40,7 +40,7 @@ const BestTweet = () => {
           }}
         >
           <div
-            className="bg-no-repeat bg-contain md:ml-8  absolute z-10 w-full h-full"
+            className="bg-no-repeat bg-contain md:ml-8 absolute z-10 w-full h-full"
             style={{
               backgroundImage:
                 "url(https://res.cloudinary.com/dwfcofnrd/image/upload/q_auto,f_auto,w_1000/tweet_kcv8ud.png)",

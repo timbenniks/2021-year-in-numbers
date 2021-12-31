@@ -69,20 +69,6 @@
     z-index: -1;
   }
 
-  .with-fancy-bg {
-    @apply relative;
-  }
-
-  .with-fancy-bg:before {
-    content: "";
-    @apply absolute w-full h-full -bottom-2 -right-6 bg-blue-dark z-0;
-  }
-
-  .with-fancy-bg.fancy-blue-light:before {
-    content: "";
-    @apply bg-blue-light;
-  }
-
   .link {
     @apply font-black text-white py-1;
   }
@@ -132,6 +118,20 @@
 }
 
 @media (min-width: 650px) {
+  .with-fancy-bg {
+    @apply relative;
+  }
+
+  .with-fancy-bg:before {
+    content: "";
+    @apply absolute w-full h-full -bottom-2 -right-6 bg-blue-dark z-0;
+  }
+
+  .with-fancy-bg.fancy-blue-light:before {
+    content: "";
+    @apply bg-blue-light;
+  }
+
   .hero {
     aspect-ratio: 16/9;
     @apply relative mb-96;
