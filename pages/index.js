@@ -15,7 +15,10 @@ export default function Home() {
     <>
       <Head>
         <title>Tim Benniks 2021 in numbers</title>
-        <meta name="description" content="2021 was a crazy year in which I switched jobs and changed up my life. This website " /shows my year in numbers.>
+        <meta
+          name="description"
+          content="2021 was a crazy year in which I switched jobs and changed up my life. This website shows my year in numbers."
+        />
 
         <link
           rel="apple-touch-icon"
@@ -41,9 +44,15 @@ export default function Home() {
 
         <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-        <meta itemprop="name" content="Tim Benniks 2021 in numbers"/>
-        <meta itemprop="description" content="2021 was a crazy year in which I switched jobs and changed up my life. This website shows my year in numbers."/>
-        <meta itemprop="image" content="http://res.cloudinary.com/dwfcofnrd/image/upload/q_auto/og_v4nrbq.png"/>
+        <meta itemProp="name" content="Tim Benniks 2021 in numbers" />
+        <meta
+          itemProp="description"
+          content="2021 was a crazy year in which I switched jobs and changed up my life. This website shows my year in numbers."
+        />
+        <meta
+          itemProp="image"
+          content="http://res.cloudinary.com/dwfcofnrd/image/upload/q_auto/og_v4nrbq.png"
+        />
 
         <meta property="og:type" content="website" />
         <meta
@@ -78,7 +87,10 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Tim Benniks 2021 in numbers" />
-        <meta name="twitter:description" content="2021 was a crazy year in which I switched jobs and changed up my life. This website " /shows my year in numbers.>
+        <meta
+          name="twitter:description"
+          content="2021 was a crazy year in which I switched jobs and changed up my life. This website shows my year in numbers."
+        />
         <meta name="twitter:site" content="@timbenniks" />
         <meta name="twitter:creator" content="@timbenniks" />
 
